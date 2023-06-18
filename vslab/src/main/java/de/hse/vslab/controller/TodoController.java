@@ -17,7 +17,8 @@ public class TodoController {
     }
 
     @PostMapping
-    public Todo createTodo(@RequestBody Todo todo) {
+    public Todo createTodo(@RequestBody String title) {
+        Todo todo = new Todo(title);
         todos.add(todo);
         return todo;
     }

@@ -14,6 +14,13 @@ public class Todo {
         this.done = done;
     }
 
+    public Todo(String title) {
+        this.title = title;
+        this.done = false;
+        this.id = 1L;
+    }
+
+
     // Getter und Setter
 
     public Long getId() {

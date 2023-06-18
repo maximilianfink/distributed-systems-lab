@@ -30,7 +30,7 @@ public class SwaggerConfig {
                 .title("Todo API")
                 .description("API documentation for the Todo application")
                 .version("1.0.0")
-                .contact(new Contact("Your Name", "", "your-email@example.com"))
+                .contact(new Contact("Maximilian Fink", "", "mafiit04@hs-esslingen.de"))
                 .build();
     }
 }
