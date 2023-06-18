@@ -4,7 +4,7 @@
 
 `docker-compose up -d`
 
-## Start without Docker
+## Development (without Docker)
 
 ### Requirements 
 
@@ -21,3 +21,8 @@
 ## Swagger UI
 
 Link: http://localhost:8080/swagger-ui/
+
+## Technologies / Frameworks used
+
+* Java Spring Boot
+* MYSQL Database
