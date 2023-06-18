@@ -1,8 +1,19 @@
-# Distributed Systems - Lab - Maximilian Fink (764001)
+# Distributed Systems - Lab - Maximilian Fink 
+
+Lab part of the module "Distributed Systems" at Esslingen University in the summersemester 2023
+
+Author: Maximilian Fink (764001)
 
 ## Start with Docker
 
 `docker-compose up -d`
+
+## Technologies / Frameworks used
+
+* Java Spring Boot
+* MYSQL Database
+* Docker
+* REST
 
 ## Development (without Docker)
 
@@ -22,7 +33,3 @@
 
 Link: http://localhost:8080/swagger-ui/
 
-## Technologies / Frameworks used
-
-* Java Spring Boot
-* MYSQL Database
