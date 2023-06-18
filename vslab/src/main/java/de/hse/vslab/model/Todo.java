@@ -28,9 +28,6 @@ public class Todo {
         this.id = 1L;
     }
 
-
-    // Getter und Setter
-
     public Long getId() {
         return id;
     }
