@@ -4,6 +4,8 @@ import de.hse.vslab.model.Todo;
 import de.hse.vslab.repository.TodoRepository;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import java.util.Optional;
 
 import java.util.List;
 
@@ -40,4 +42,17 @@ public class TodoController {
         }
         return null;
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteTodo(@PathVariable Long id) {
+        Optional<Todo> optionalTodo = todoRepository.findById(id);
+        if (optionalTodo.isPresent()) {
+            todoRepository.deleteById(id);
+            return ResponseEntity.ok("Todo successfully deleted");
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
 }
