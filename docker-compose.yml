@@ -9,11 +9,11 @@ services:
       MYSQL_DATABASE: todo_app
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
-      interval: 10s
+      interval: 2s
       timeout: 5s
       retries: 5
   backend:
-    build: ./vslab 
+    build: ./backend 
     ports:
       - 8080:8080 
     environment:
