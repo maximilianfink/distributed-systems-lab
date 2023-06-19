@@ -5,8 +5,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import de.hse.vslab.service.TodoService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
+
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/todos")
 public class TodoController {
@@ -23,7 +26,7 @@ public class TodoController {
     }
 
     @PostMapping
-    public Todo createTodo(@RequestBody String title) {
+    public Todo createTodo(@RequestParam String title) {
         return todoService.createTodo(title);
     }
 

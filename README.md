@@ -8,6 +8,10 @@ Author: Maximilian Fink (764001)
 
 `docker-compose up -d`
 
+Force a rebuild:
+
+`docker-compose up --build`
+
 ## Technologies / Frameworks used
 
 * Java Spring Boot
