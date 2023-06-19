@@ -34,7 +34,7 @@ export default {
     return {
       todos: [],
       newTodo: '',
-      backendUrl: 'http://localhost:8080', // Backend-URL hier einfügen
+      backendUrl: process.env.BACKEND_URL,
       editingTodo: null,
       editedTodo: {
         id: '',

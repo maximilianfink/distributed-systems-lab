@@ -13,9 +13,9 @@ services:
       timeout: 5s
       retries: 5
   backend:
-    image: maximilianfink/vslab-backend:latest
+    build: ./backend 
     ports:
-      - 8080:8080
+      - 8080:8080 
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/todo_app
       - SPRING_DATASOURCE_USERNAME=root
@@ -24,8 +24,8 @@ services:
       db:
         condition: service_healthy
   frontend:
-    image: maximilianfink/vslab-frontend:latest
+    build: ./frontend
     ports:
       - 80:8080
     environment:
-      - BACKEND_URL=http://backend:8080
+      - BACKEND_URL=http://localhost:8080
