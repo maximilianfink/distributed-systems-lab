@@ -28,13 +28,15 @@ This project is a web application consisting of a backend with a MySQL database 
 - Mark todos as done
 
 
-### Technologies / Frameworks used
+### Used Technologies & Frameworks
 
 * Java Spring Boot
 * MYSQL Database
 * Vue.JS
 * Docker
 * REST
+* Maven
+* npm
   
 ## Start with Docker and rebuild the Images (Dev)
 
