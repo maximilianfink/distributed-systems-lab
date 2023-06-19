@@ -32,6 +32,7 @@ This project is a web application consisting of a backend with a MySQL database 
 
 * Java Spring Boot
 * MYSQL Database
+* Vue.JS
 * Docker
 * REST
   
